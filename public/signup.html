@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz App</title>
+
+    <link rel="stylesheet" href="lib/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+
+<body onload="checkState()">
+    
+    <header>
+        <div class="main_head">
+            <div class="header_title">
+                <h1>Quiz Application</h1>
+            </div>
+            <button class="btn btn-danger" style="display: hidden;" id="signOutBtn">SignOut</button>
+
+        </div>
+
+    </header>
+
+    <main>
+        <div id="form_Div">
+            <form id="form_data">
+                <div class="form_title">
+                    <h1 class="display-4" id="form_title">Create Account</h1>
+                </div>
+
+                <div id="form_input">
+
+                    <div id="name_box">
+                        <label for="name">Name: </label>
+                        <input type="text" class="form-control" name="name" id="userName">
+                    </div>
+
+                    <div id="email_box">
+                        <label for="email">E-mail: </label>
+                        <input type="email" class="form-control" name="email" id="userEmail">
+                    </div>
+
+                    <div id="password_box">
+                        <label for="password">Password: </label>
+                        <input type="password" class="form-control" name="password" id="userPassword">
+                    </div>
+
+                    <div id="tel_box">
+                        <label for="telephone">Phone No: </label>
+                        <input type="tel" class="form-control" name="telephone" id="userTel">
+                    </div>
+
+                    <div id="button_box">
+                        <input type="button" id="signUpBtn" class="btn btn-success" value="Sign Up">
+                    </div>
+
+                </div>
+
+                <br>
+                <a href="index.html">Back To Login Page.</a>
+
+            </form>
+        </div>
+    </main>
+
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyA94hSMrRkUoS4B-LTUVsQqklYXZcPBP7g",
+            authDomain: "quizapp-111.firebaseapp.com",
+            databaseURL: "https://quizapp-111.firebaseio.com",
+            projectId: "quizapp-111",
+            storageBucket: "quizapp-111.appspot.com",
+            messagingSenderId: "26199080366"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>

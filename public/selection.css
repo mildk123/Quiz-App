@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee+Shade");
+
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+    background: #757F9A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+}
+
+/* 
+*
+Header Data
+*
+*/
+
+header {
+  /* border: 1px solid red; */
+  text-align: center;
+  width: 100vw;
+}
+
+.main_head {
+  display: flex;
+  flex-wrap: wrap;
+  background: rgb(29, 29, 29);
+  padding: 0.6%;
+}
+
+.header_title {
+  width: 50%;
+  font-size: 100%;
+  padding: 0.1%;
+  margin-left: auto;
+  margin-right: auto;
+  /* background: blue; */
+}
+
+.header_title > h1 {
+  font-family: "Bungee Shade", cursive;
+  font-size: 3em;
+  color: white;
+  text-shadow: -4px 1px 5px black;
+  text-align: center;
+}
+
+#signOutBtn{
+  display: none;
+}
+
+
+/* 
+*
+OPTIONS PANEL
+*
+*/
+
+#main_div{
+    width: 98vw;
+    margin: 0 auto;
+    margin-top: 2vw;
+    padding: 0.1%;
+
+    /* background: rebeccapurple; */
+}
+
+#button_div{
+    width: 99%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5%;
+    margin: 0.4%;
+
+    /* background: rgb(177, 206, 14); */
+}
+
+.option_buttons{
+    height: 15vw;
+    width: 25vw;
+    color: white;
+    text-shadow: 3px 4px 12px black;
+    font-weight: 800;
+
+    box-shadow: 4px 4px 12px black;
+    font-size: 3em;
+    line-height: 15vw;
+    text-align: center;
+    border-radius: 34px;
+
+
+    margin-right: 1%;
+    margin-bottom: 1%;
+
+    /* background: #757F9A; */
+}
+
+#html{
+    background-image: url(lib/images/HTML5.jpeg);
+    background-repeat: no-repeat;
+    order: 1;    
+} 
+#css{
+    background-image: url(lib/images/CSS.jpg);
+    background-repeat: no-repeat;
+    order: 2;
+}

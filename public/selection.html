@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz App</title>
+
+    <link rel="stylesheet" href="lib/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="selection.css">
+</head>
+
+<body onload="checkState()">
+    <header>
+        <div class="main_head">
+            <div class="header_title">
+                <h1>Quiz Application</h1>
+            </div>
+            <button class="btn btn-danger" style="display: hidden;" id="signOutBtn">SignOut</button>
+
+        </div>
+
+    </header>
+
+    <main>
+        <div id="main_div">
+            <div id="button_div">
+                <div class="option_buttons" id="html">HTML</div>
+                <div class="option_buttons" id="css">CSS</div>
+            </div>
+
+        </div>
+    </main>
+
+
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyA94hSMrRkUoS4B-LTUVsQqklYXZcPBP7g",
+            authDomain: "quizapp-111.firebaseapp.com",
+            databaseURL: "https://quizapp-111.firebaseio.com",
+            projectId: "quizapp-111",
+            storageBucket: "quizapp-111.appspot.com",
+            messagingSenderId: "26199080366"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</body>
+
+</html>
